@@ -1,0 +1,166 @@
+diff -cN -r OpenCV-2.2.0/CMakeLists.txt OpenCV-2.2.0.patched/CMakeLists.txt
+*** OpenCV-2.2.0/CMakeLists.txt	2010-12-05 12:35:23.000000000 +0900
+--- OpenCV-2.2.0.patched/CMakeLists.txt	2010-12-31 02:07:19.000000000 +0900
+***************
+*** 212,218 ****
+      set(OPENCV_BUILD_3RDPARTY_LIBS FALSE CACHE BOOL "Build 3rd party libraries")
+  endif()
+  
+! include(OpenCVPCHSupport.cmake REQUIRED)
+  include(OpenCVModule.cmake REQUIRED)
+  
+  if(UNIX)
+--- 212,218 ----
+      set(OPENCV_BUILD_3RDPARTY_LIBS FALSE CACHE BOOL "Build 3rd party libraries")
+  endif()
+  
+! ###### include(OpenCVPCHSupport.cmake REQUIRED)
+  include(OpenCVModule.cmake REQUIRED)
+  
+  if(UNIX)
+***************
+*** 324,345 ****
+  
+          PKG_CHECK_MODULES(${ALIAS} ${module_name})
+  
+!         if (${ALIAS_FOUND})
+!             set(${define} 1)
+!             foreach(P "${ALIAS_INCLUDE_DIRS}")
+!                 if (${P})
+!                     list(APPEND HIGHGUI_INCLUDE_DIRS ${${P}})
+!                 endif()
+!             endforeach()
+! 
+!             foreach(P "${ALIAS_LIBRARY_DIRS}")
+!                 if (${P})
+!                     list(APPEND HIGHGUI_LIBRARY_DIRS ${${P}})
+!                 endif()
+!             endforeach()
+! 
+!             list(APPEND HIGHGUI_LIBRARIES ${${ALIAS_LIBRARIES}})
+!         endif()
+      endif()
+  endmacro()
+  
+--- 324,345 ----
+  
+          PKG_CHECK_MODULES(${ALIAS} ${module_name})
+  
+! #####        if (${ALIAS_FOUND})
+! #####            set(${define} 1)
+! #####            foreach(P "${ALIAS_INCLUDE_DIRS}")
+! #####                if (${P})
+! #####                    list(APPEND HIGHGUI_INCLUDE_DIRS ${${P}})
+! #####                endif()
+! #####            endforeach()
+! #####
+! #####            foreach(P "${ALIAS_LIBRARY_DIRS}")
+! #####                if (${P})
+! #####                    list(APPEND HIGHGUI_LIBRARY_DIRS ${${P}})
+! #####                endif()
+! #####            endforeach()
+! #####
+! #####            list(APPEND HIGHGUI_LIBRARIES ${${ALIAS_LIBRARIES}})
+! #####        endif()
+      endif()
+  endmacro()
+  
+***************
+*** 827,837 ****
+  
+  ################### DOXYGEN ###############
+  
+! find_package(Doxygen)
+  
+! if(DOXYGEN_FOUND)
+!     set(BUILD_DOXYGEN_DOCS ON CACHE BOOL "Generate HTML docs using Doxygen")
+! endif()
+  
+  # ----------------------------------------------------------------------------
+  #                   UPDATE CONFIG FILES & SCRIPTS:
+--- 827,837 ----
+  
+  ################### DOXYGEN ###############
+  
+! #####find_package(Doxygen)
+  
+! #####if(DOXYGEN_FOUND)
+! #####    set(BUILD_DOXYGEN_DOCS ON CACHE BOOL "Generate HTML docs using Doxygen")
+! #####endif()
+  
+  # ----------------------------------------------------------------------------
+  #                   UPDATE CONFIG FILES & SCRIPTS:
+***************
+*** 1235,1241 ****
+          endif()
+  
+          install(DIRECTORY data samples DESTINATION "." COMPONENT main PATTERN ".svn" EXCLUDE)
+!         install(DIRECTORY 3rdparty android modules tests DESTINATION "." COMPONENT src PATTERN ".svn" EXCLUDE)
+          install(DIRECTORY doc/ DESTINATION doc COMPONENT src FILES_MATCHING PATTERN "*.tex")
+          install(DIRECTORY doc/pics DESTINATION doc COMPONENT src PATTERN ".svn" EXCLUDE)
+          install(DIRECTORY doc/latex2sphinx DESTINATION doc COMPONENT src PATTERN ".svn" EXCLUDE)
+--- 1235,1242 ----
+          endif()
+  
+          install(DIRECTORY data samples DESTINATION "." COMPONENT main PATTERN ".svn" EXCLUDE)
+! #####        install(DIRECTORY 3rdparty android modules tests DESTINATION "." COMPONENT src PATTERN ".svn" EXCLUDE)
+!         install(DIRECTORY 3rdparty modules tests DESTINATION "." COMPONENT src PATTERN ".svn" EXCLUDE)
+          install(DIRECTORY doc/ DESTINATION doc COMPONENT src FILES_MATCHING PATTERN "*.tex")
+          install(DIRECTORY doc/pics DESTINATION doc COMPONENT src PATTERN ".svn" EXCLUDE)
+          install(DIRECTORY doc/latex2sphinx DESTINATION doc COMPONENT src PATTERN ".svn" EXCLUDE)
+diff -cN -r OpenCV-2.2.0/modules/CMakeLists.txt OpenCV-2.2.0.patched/modules/CMakeLists.txt
+*** OpenCV-2.2.0/modules/CMakeLists.txt	2010-12-05 12:35:24.000000000 +0900
+--- OpenCV-2.2.0.patched/modules/CMakeLists.txt	2010-12-31 02:07:19.000000000 +0900
+***************
+*** 2,8 ****
+   configure_file("${CMAKE_SOURCE_DIR}/Android.mk.modules.in" "${CMAKE_CURRENT_BINARY_DIR}/Android.mk")
+  endif()
+  
+! add_subdirectory(calib3d)
+  add_subdirectory(core)
+  add_subdirectory(features2d)
+  add_subdirectory(flann)
+--- 2,8 ----
+   configure_file("${CMAKE_SOURCE_DIR}/Android.mk.modules.in" "${CMAKE_CURRENT_BINARY_DIR}/Android.mk")
+  endif()
+  
+! #####add_subdirectory(calib3d)
+  add_subdirectory(core)
+  add_subdirectory(features2d)
+  add_subdirectory(flann)
+***************
+*** 13,19 ****
+     endif()
+  endif()
+  
+! add_subdirectory(highgui)
+  add_subdirectory(imgproc)
+  add_subdirectory(legacy)
+  add_subdirectory(contrib)
+--- 13,19 ----
+     endif()
+  endif()
+  
+! #####add_subdirectory(highgui)
+  add_subdirectory(imgproc)
+  add_subdirectory(legacy)
+  add_subdirectory(contrib)
+***************
+*** 27,34 ****
+  add_subdirectory(video)
+  
+  if(NOT ANDROID)
+! add_subdirectory(haartraining)
+! add_subdirectory(traincascade)
+  add_subdirectory(gpu)
+  endif()
+  
+--- 27,34 ----
+  add_subdirectory(video)
+  
+  if(NOT ANDROID)
+! #####add_subdirectory(haartraining)
+! #####add_subdirectory(traincascade)
+  add_subdirectory(gpu)
+  endif()
+  
