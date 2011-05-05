@@ -35,6 +35,10 @@ cd ../simulator
 ../../opencv_cmake.sh simulator ../../
 make -j 4
 
+# back to root directory
+
+cd ../../
+
 # integrate static libraries into one file.
 
 libfiles[0]=libopencv_contrib.a
