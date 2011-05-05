@@ -2,19 +2,21 @@
 
 # target paths
 
-PATH_IOS=./ios/
-PATH_LIB_OUTPUT=${PATH_IOS}/lib/
-PATH_ARMV7=${PATH_IOS}device_armv7/
-PATH_ARMV6=${PATH_IOS}device_armv6/
-PATH_SIMULARTOR=${PATH_IOS}simulator/
+PATH_TARGET=./lib/
+PATH_LIB_OUTPUT=${PATH_TARGET}/
+PATH_ARMV7=${PATH_TARGET}device_armv7/
+PATH_ARMV6=${PATH_TARGET}device_armv6/
+PATH_SIMULARTOR=${PATH_TARGET}simulator/
 
 # patched opencv's cmake script
 
-patch -p1 < ./OpenCV-2.2.0.patch
+cd ./OpenCV-2.2.0
+patch -p1 < ../OpenCV-2.2.0.patch
+cd ../
 
 # make target directories
 
-mkdir ${PATH_IOS}
+mkdir ${PATH_TARGET}
 mkdir ${PATH_LIB_OUTPUT}
 mkdir ${PATH_ARMV7}
 mkdir ${PATH_ARMV6}
@@ -22,21 +24,19 @@ mkdir ${PATH_SIMULARTOR}
 
 # build three architectures
 
-cd ./ios
-cd ./device_armv7
-../../opencv_cmake.sh armv7 ../../
+cd ./${PATH_ARMV7}
+../../opencv_cmake.sh armv7 ../../OpenCV-2.2.0
 make -j 4
+cd ../../
 
-cd ../device_armv6
-../../opencv_cmake.sh armv6 ../../
+cd ./${PATH_ARMV6}
+../../opencv_cmake.sh armv6 ../../OpenCV-2.2.0
 make -j 4
+cd ../../
 
-cd ../simulator
-../../opencv_cmake.sh simulator ../../
+cd ./${PATH_SIMULARTOR}
+../../opencv_cmake.sh simulator ../../OpenCV-2.2.0
 make -j 4
-
-# back to root directory
-
 cd ../../
 
 # integrate static libraries into one file.
