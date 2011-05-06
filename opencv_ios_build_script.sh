@@ -3,6 +3,7 @@
 # target paths
 
 PATH_TARGET=./lib/
+PATH_HEADER_TARGET=./include/
 PATH_LIB_OUTPUT=${PATH_TARGET}/
 PATH_ARMV7=${PATH_TARGET}device_armv7/
 PATH_ARMV6=${PATH_TARGET}device_armv6/
@@ -55,4 +56,24 @@ libfiles[9]=libopencv_video.a
 for file in ${libfiles[@]};do
 	lipo -create ${PATH_ARMV7}lib/${file} ${PATH_ARMV6}lib/${file} ${PATH_SIMULARTOR}lib/${file} -output ${PATH_LIB_OUTPUT}${file}
 	lipo -info ${PATH_LIB_OUTPUT}${file}
-done 
+done
+
+# setup header files
+
+modules[0]=contrib
+modules[1]=core
+modules[2]=features2d
+modules[3]=flann
+modules[4]=gpu
+modules[5]=imgproc
+modules[6]=legacy
+modules[7]=ml
+modules[8]=objdetect
+modules[9]=video
+modules[10]=calib3d
+
+cp -r ./OpenCV-2.2.0/include ./include
+
+for module in ${modules[@]};do
+	cp -r ./OpenCV-2.2.0/modules/${module}/include/opencv2/${module} ./include/opencv2/
+done

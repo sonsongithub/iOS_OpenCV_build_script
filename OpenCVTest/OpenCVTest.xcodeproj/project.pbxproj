@@ -16,7 +16,17 @@
 		1480BFE4137318A9005E2832 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1480BFE2137318A9005E2832 /* MainWindow.xib */; };
 		1480BFE7137318A9005E2832 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1480BFE6137318A9005E2832 /* RootViewController.m */; };
 		1480BFEA137318A9005E2832 /* RootViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1480BFE8137318A9005E2832 /* RootViewController.xib */; };
-		1480BFFC13731B81005E2832 /* libopencv_core.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1480BFFB13731B81005E2832 /* libopencv_core.a */; };
+		14DE34441373B3EF00746FC4 /* libopencv_contrib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 14DE343A1373B3EF00746FC4 /* libopencv_contrib.a */; };
+		14DE34451373B3EF00746FC4 /* libopencv_core.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 14DE343B1373B3EF00746FC4 /* libopencv_core.a */; };
+		14DE34461373B3EF00746FC4 /* libopencv_features2d.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 14DE343C1373B3EF00746FC4 /* libopencv_features2d.a */; };
+		14DE34471373B3EF00746FC4 /* libopencv_flann.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 14DE343D1373B3EF00746FC4 /* libopencv_flann.a */; };
+		14DE34481373B3EF00746FC4 /* libopencv_gpu.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 14DE343E1373B3EF00746FC4 /* libopencv_gpu.a */; };
+		14DE34491373B3EF00746FC4 /* libopencv_imgproc.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 14DE343F1373B3EF00746FC4 /* libopencv_imgproc.a */; };
+		14DE344A1373B3EF00746FC4 /* libopencv_legacy.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 14DE34401373B3EF00746FC4 /* libopencv_legacy.a */; };
+		14DE344B1373B3EF00746FC4 /* libopencv_ml.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 14DE34411373B3EF00746FC4 /* libopencv_ml.a */; };
+		14DE344C1373B3EF00746FC4 /* libopencv_objdetect.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 14DE34421373B3EF00746FC4 /* libopencv_objdetect.a */; };
+		14DE344D1373B3EF00746FC4 /* libopencv_video.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 14DE34431373B3EF00746FC4 /* libopencv_video.a */; };
+		14DE34681373BB7A00746FC4 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14DE34671373BB7A00746FC4 /* Accelerate.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,7 +44,17 @@
 		1480BFE5137318A9005E2832 /* RootViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
 		1480BFE6137318A9005E2832 /* RootViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
 		1480BFE9137318A9005E2832 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/RootViewController.xib; sourceTree = "<group>"; };
-		1480BFFB13731B81005E2832 /* libopencv_core.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libopencv_core.a; path = "../OpenCV-2.2.0/ios/lib/libopencv_core.a"; sourceTree = "<group>"; };
+		14DE343A1373B3EF00746FC4 /* libopencv_contrib.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libopencv_contrib.a; path = ../lib/libopencv_contrib.a; sourceTree = "<group>"; };
+		14DE343B1373B3EF00746FC4 /* libopencv_core.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libopencv_core.a; path = ../lib/libopencv_core.a; sourceTree = "<group>"; };
+		14DE343C1373B3EF00746FC4 /* libopencv_features2d.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libopencv_features2d.a; path = ../lib/libopencv_features2d.a; sourceTree = "<group>"; };
+		14DE343D1373B3EF00746FC4 /* libopencv_flann.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libopencv_flann.a; path = ../lib/libopencv_flann.a; sourceTree = "<group>"; };
+		14DE343E1373B3EF00746FC4 /* libopencv_gpu.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libopencv_gpu.a; path = ../lib/libopencv_gpu.a; sourceTree = "<group>"; };
+		14DE343F1373B3EF00746FC4 /* libopencv_imgproc.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libopencv_imgproc.a; path = ../lib/libopencv_imgproc.a; sourceTree = "<group>"; };
+		14DE34401373B3EF00746FC4 /* libopencv_legacy.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libopencv_legacy.a; path = ../lib/libopencv_legacy.a; sourceTree = "<group>"; };
+		14DE34411373B3EF00746FC4 /* libopencv_ml.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libopencv_ml.a; path = ../lib/libopencv_ml.a; sourceTree = "<group>"; };
+		14DE34421373B3EF00746FC4 /* libopencv_objdetect.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libopencv_objdetect.a; path = ../lib/libopencv_objdetect.a; sourceTree = "<group>"; };
+		14DE34431373B3EF00746FC4 /* libopencv_video.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libopencv_video.a; path = ../lib/libopencv_video.a; sourceTree = "<group>"; };
+		14DE34671373BB7A00746FC4 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,10 +62,20 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				14DE34681373BB7A00746FC4 /* Accelerate.framework in Frameworks */,
 				1480BFD1137318A9005E2832 /* UIKit.framework in Frameworks */,
 				1480BFD3137318A9005E2832 /* Foundation.framework in Frameworks */,
 				1480BFD5137318A9005E2832 /* CoreGraphics.framework in Frameworks */,
-				1480BFFC13731B81005E2832 /* libopencv_core.a in Frameworks */,
+				14DE34441373B3EF00746FC4 /* libopencv_contrib.a in Frameworks */,
+				14DE34451373B3EF00746FC4 /* libopencv_core.a in Frameworks */,
+				14DE34461373B3EF00746FC4 /* libopencv_features2d.a in Frameworks */,
+				14DE34471373B3EF00746FC4 /* libopencv_flann.a in Frameworks */,
+				14DE34481373B3EF00746FC4 /* libopencv_gpu.a in Frameworks */,
+				14DE34491373B3EF00746FC4 /* libopencv_imgproc.a in Frameworks */,
+				14DE344A1373B3EF00746FC4 /* libopencv_legacy.a in Frameworks */,
+				14DE344B1373B3EF00746FC4 /* libopencv_ml.a in Frameworks */,
+				14DE344C1373B3EF00746FC4 /* libopencv_objdetect.a in Frameworks */,
+				14DE344D1373B3EF00746FC4 /* libopencv_video.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -55,7 +85,7 @@
 		1480BFC1137318A9005E2832 = {
 			isa = PBXGroup;
 			children = (
-				1480BFFB13731B81005E2832 /* libopencv_core.a */,
+				14DE34391373B3D900746FC4 /* Library */,
 				1480BFD6137318A9005E2832 /* OpenCVTest */,
 				1480BFCF137318A9005E2832 /* Frameworks */,
 				1480BFCD137318A9005E2832 /* Products */,
@@ -73,6 +103,7 @@
 		1480BFCF137318A9005E2832 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				14DE34671373BB7A00746FC4 /* Accelerate.framework */,
 				1480BFD0137318A9005E2832 /* UIKit.framework */,
 				1480BFD2137318A9005E2832 /* Foundation.framework */,
 				1480BFD4137318A9005E2832 /* CoreGraphics.framework */,
@@ -103,6 +134,23 @@
 				1480BFDD137318A9005E2832 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		14DE34391373B3D900746FC4 /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				14DE343A1373B3EF00746FC4 /* libopencv_contrib.a */,
+				14DE343B1373B3EF00746FC4 /* libopencv_core.a */,
+				14DE343C1373B3EF00746FC4 /* libopencv_features2d.a */,
+				14DE343D1373B3EF00746FC4 /* libopencv_flann.a */,
+				14DE343E1373B3EF00746FC4 /* libopencv_gpu.a */,
+				14DE343F1373B3EF00746FC4 /* libopencv_imgproc.a */,
+				14DE34401373B3EF00746FC4 /* libopencv_legacy.a */,
+				14DE34411373B3EF00746FC4 /* libopencv_ml.a */,
+				14DE34421373B3EF00746FC4 /* libopencv_objdetect.a */,
+				14DE34431373B3EF00746FC4 /* libopencv_video.a */,
+			);
+			name = Library;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -208,7 +256,10 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					DEBUG,
+					_DEBUG,
+				);
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				GCC_THUMB_SUPPORT = NO;
 				GCC_VERSION = com.apple.compilers.llvmgcc42;
@@ -226,6 +277,7 @@
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 3;
 				GCC_THUMB_SUPPORT = NO;
 				GCC_VERSION = com.apple.compilers.llvmgcc42;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
@@ -246,11 +298,15 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "OpenCVTest/OpenCVTest-Prefix.pch";
 				GCC_THUMB_SUPPORT = NO;
-				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/../OpenCV-2.2.0/include\"/**";
+				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/../include\"/**";
 				INFOPLIST_FILE = "OpenCVTest/OpenCVTest-Info.plist";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"\"$(SRCROOT)/../OpenCV-2.2.0/ios/lib\"",
+					"\"$(SRCROOT)/../lib\"",
+				);
+				OTHER_LDFLAGS = (
+					"-lstdc++",
+					"-lz",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
@@ -265,11 +321,15 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "OpenCVTest/OpenCVTest-Prefix.pch";
 				GCC_THUMB_SUPPORT = NO;
-				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/../OpenCV-2.2.0/include\"/**";
+				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/../include\"/**";
 				INFOPLIST_FILE = "OpenCVTest/OpenCVTest-Info.plist";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"\"$(SRCROOT)/../OpenCV-2.2.0/ios/lib\"",
+					"\"$(SRCROOT)/../lib\"",
+				);
+				OTHER_LDFLAGS = (
+					"-lstdc++",
+					"-lz",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				VALIDATE_PRODUCT = YES;

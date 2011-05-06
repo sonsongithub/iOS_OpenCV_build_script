@@ -8,6 +8,8 @@
 
 #import "OpenCVTestAppDelegate.h"
 
+#import <opencv/cv.h>
+
 @implementation OpenCVTestAppDelegate
 
 
