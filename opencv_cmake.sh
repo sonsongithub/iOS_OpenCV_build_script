@@ -21,12 +21,8 @@ if ! type 'cmake' > /dev/null 2>&1; then
 fi
 
 TARGET_SDK=`echo "$1"|tr '[:upper:]' '[:lower:]'`
-if [ "$TARGET_SDK" = "armv7" ]; then
+if [ "$TARGET_SDK" = "device" ]; then
 	TARGET_SDK_NAME="iPhoneOS"
-	ARCH_="armv7"
-elif [ "$TARGET_SDK" = "armv6" ]; then
-	TARGET_SDK_NAME="iPhoneOS"
-	ARCH_="armv6"
 elif [ "$TARGET_SDK" = "simulator" ]; then
 	TARGET_SDK_NAME="iPhoneSimulator"
 else
@@ -88,8 +84,8 @@ if [ "$TARGET_SDK" = "simulator" ]; then
 	ARCH="i386"
 	CMAKE_OPTIONS='-D CMAKE_OSX_DEPLOYMENT_TARGET="10.6"'
 else
-	FLAGS="-miphoneos-version-min=${IPHONEOS_VERSION_MIN} -mno-thumb -O3"
-	ARCH=${ARCH_}
+	FLAGS="-miphoneos-version-min=${IPHONEOS_VERSION_MIN} -mno-thumb -O3 -arch armv6 -arch armv7"
+	ARCH="armv6;armv7"
 	#CMAKE_OPTIONS="-D ENABLE_SSE=OFF -D ENABLE_SSE2=OFF -D CMAKE_SYSTEM_PROCESSOR=arm"
 	CMAKE_OPTIONS="-D ENABLE_SSE=OFF -D ENABLE_SSE2=OFF"
 fi

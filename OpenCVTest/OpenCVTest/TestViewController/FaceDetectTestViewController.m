@@ -47,7 +47,6 @@
 	// Scaling down
 	IplImage *small_image = cvCreateImage(cvSize(image->width/2,image->height/2), IPL_DEPTH_8U, 3);
 	cvPyrDown(image, small_image, CV_GAUSSIAN_5x5);
-	int scale = 2;
 	
 	// Load XML
 	NSString *path = [[NSBundle mainBundle] pathForResource:@"haarcascade_frontalface_default" ofType:@"xml"];
