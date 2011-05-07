@@ -36,6 +36,7 @@
 		14A6F098137579380078A83F /* libopencv_ml.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 14A6F08E137579380078A83F /* libopencv_ml.a */; };
 		14A6F099137579380078A83F /* libopencv_objdetect.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 14A6F08F137579380078A83F /* libopencv_objdetect.a */; };
 		14A6F09A137579380078A83F /* libopencv_video.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 14A6F090137579380078A83F /* libopencv_video.a */; };
+		14A6F0A4137581EF0078A83F /* lenna.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 14A6F0A3137581EF0078A83F /* lenna.jpg */; };
 		14DE34681373BB7A00746FC4 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14DE34671373BB7A00746FC4 /* Accelerate.framework */; };
 /* End PBXBuildFile section */
 
@@ -75,6 +76,7 @@
 		14A6F08E137579380078A83F /* libopencv_ml.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libopencv_ml.a; path = ../build/lib/libopencv_ml.a; sourceTree = "<group>"; };
 		14A6F08F137579380078A83F /* libopencv_objdetect.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libopencv_objdetect.a; path = ../build/lib/libopencv_objdetect.a; sourceTree = "<group>"; };
 		14A6F090137579380078A83F /* libopencv_video.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libopencv_video.a; path = ../build/lib/libopencv_video.a; sourceTree = "<group>"; };
+		14A6F0A3137581EF0078A83F /* lenna.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = lenna.jpg; path = OpenCVTest/lenna.jpg; sourceTree = SOURCE_ROOT; };
 		14DE34671373BB7A00746FC4 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
@@ -118,6 +120,7 @@
 		141CE92013753D8600E9093D /* data */ = {
 			isa = PBXGroup;
 			children = (
+				14A6F0A3137581EF0078A83F /* lenna.jpg */,
 				141CE92113753D8600E9093D /* haarcascade_frontalface_alt.xml */,
 				141CE92213753D8600E9093D /* haarcascade_frontalface_alt2.xml */,
 				141CE92313753D8600E9093D /* haarcascade_frontalface_alt_tree.xml */,
@@ -261,6 +264,7 @@
 				141CE93213753D8600E9093D /* haarcascade_profileface.xml in Resources */,
 				141CE93313753D8600E9093D /* haarcascade_upperbody.xml in Resources */,
 				141CE93513753D8600E9093D /* FaceDetectTestViewController.xib in Resources */,
+				14A6F0A4137581EF0078A83F /* lenna.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
