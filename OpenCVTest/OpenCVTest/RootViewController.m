@@ -8,6 +8,8 @@
 
 #import "RootViewController.h"
 
+#import "FaceDetectTestViewController.h"
+
 @implementation RootViewController
 
 - (void)viewDidLoad
@@ -51,7 +53,7 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-	return 0;
+	return 1;
 }
 
 // Customize the appearance of table view cells.
@@ -65,6 +67,8 @@
     }
 
 	// Configure the cell.
+	[cell.textLabel setText:NSLocalizedString(@"hoge", nil)];
+	
     return cell;
 }
 
@@ -118,6 +122,9 @@
     [self.navigationController pushViewController:detailViewController animated:YES];
     [detailViewController release];
 	*/
+	FaceDetectTestViewController *con = [[FaceDetectTestViewController alloc] initWithNibName:nil bundle:nil];
+	[self.navigationController pushViewController:con animated:YES];
+	[con release];
 }
 
 - (void)didReceiveMemoryWarning
