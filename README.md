@@ -12,8 +12,8 @@ If you have not installed cmake into your Mac, install it.
 
 After building it, following folders are made.
 
-./build/lib/
-./build/include/
+        ./build/lib/
+        ./build/include/
 
 Link the files in "./build/lib/" folders, and open Xcode's project property window, and then set "./build/include/" path as header search path.
 
