@@ -7,26 +7,35 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		141CE92C13753D8600E9093D /* haarcascade_frontalface_alt.xml in Resources */ = {isa = PBXBuildFile; fileRef = 141CE92113753D8600E9093D /* haarcascade_frontalface_alt.xml */; };
-		141CE92D13753D8600E9093D /* haarcascade_frontalface_alt2.xml in Resources */ = {isa = PBXBuildFile; fileRef = 141CE92213753D8600E9093D /* haarcascade_frontalface_alt2.xml */; };
-		141CE92E13753D8600E9093D /* haarcascade_frontalface_alt_tree.xml in Resources */ = {isa = PBXBuildFile; fileRef = 141CE92313753D8600E9093D /* haarcascade_frontalface_alt_tree.xml */; };
-		141CE92F13753D8600E9093D /* haarcascade_frontalface_default.xml in Resources */ = {isa = PBXBuildFile; fileRef = 141CE92413753D8600E9093D /* haarcascade_frontalface_default.xml */; };
-		141CE93013753D8600E9093D /* haarcascade_fullbody.xml in Resources */ = {isa = PBXBuildFile; fileRef = 141CE92513753D8600E9093D /* haarcascade_fullbody.xml */; };
-		141CE93113753D8600E9093D /* haarcascade_lowerbody.xml in Resources */ = {isa = PBXBuildFile; fileRef = 141CE92613753D8600E9093D /* haarcascade_lowerbody.xml */; };
-		141CE93213753D8600E9093D /* haarcascade_profileface.xml in Resources */ = {isa = PBXBuildFile; fileRef = 141CE92713753D8600E9093D /* haarcascade_profileface.xml */; };
-		141CE93313753D8600E9093D /* haarcascade_upperbody.xml in Resources */ = {isa = PBXBuildFile; fileRef = 141CE92813753D8600E9093D /* haarcascade_upperbody.xml */; };
-		141CE93413753D8600E9093D /* FaceDetectTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 141CE92A13753D8600E9093D /* FaceDetectTestViewController.m */; };
-		141CE93513753D8600E9093D /* FaceDetectTestViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 141CE92B13753D8600E9093D /* FaceDetectTestViewController.xib */; };
-		143A7C951391C95600573D7B /* UIViewController+test.m in Sources */ = {isa = PBXBuildFile; fileRef = 143A7C941391C95600573D7B /* UIViewController+test.m */; };
+		143A7CA41391CD2B00573D7B /* OpenCVTestAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 143A7CA11391CD2B00573D7B /* OpenCVTestAppDelegate.m */; };
+		143A7CA51391CD2B00573D7B /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 143A7CA31391CD2B00573D7B /* RootViewController.m */; };
+		143A7CB71391CD3A00573D7B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 143A7CA71391CD3A00573D7B /* InfoPlist.strings */; };
+		143A7CB81391CD3A00573D7B /* MainWindow-iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 143A7CA91391CD3A00573D7B /* MainWindow-iPad.xib */; };
+		143A7CB91391CD3A00573D7B /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 143A7CAB1391CD3A00573D7B /* MainWindow.xib */; };
+		143A7CBA1391CD3A00573D7B /* RootViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 143A7CAD1391CD3A00573D7B /* RootViewController.xib */; };
+		143A7CBB1391CD3A00573D7B /* Default-Landscape.png in Resources */ = {isa = PBXBuildFile; fileRef = 143A7CB01391CD3A00573D7B /* Default-Landscape.png */; };
+		143A7CBC1391CD3A00573D7B /* Default-Portrait.png in Resources */ = {isa = PBXBuildFile; fileRef = 143A7CB11391CD3A00573D7B /* Default-Portrait.png */; };
+		143A7CBD1391CD3A00573D7B /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 143A7CB21391CD3A00573D7B /* Default.png */; };
+		143A7CBE1391CD3A00573D7B /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 143A7CB31391CD3A00573D7B /* Default@2x.png */; };
+		143A7CBF1391CD3A00573D7B /* icon114x114.png in Resources */ = {isa = PBXBuildFile; fileRef = 143A7CB41391CD3A00573D7B /* icon114x114.png */; };
+		143A7CC01391CD3A00573D7B /* icon57x57.png in Resources */ = {isa = PBXBuildFile; fileRef = 143A7CB51391CD3A00573D7B /* icon57x57.png */; };
+		143A7CC11391CD3A00573D7B /* icon72x72.png in Resources */ = {isa = PBXBuildFile; fileRef = 143A7CB61391CD3A00573D7B /* icon72x72.png */; };
+		143A7CD21391CD5500573D7B /* haarcascade_frontalface_alt.xml in Resources */ = {isa = PBXBuildFile; fileRef = 143A7CC41391CD5500573D7B /* haarcascade_frontalface_alt.xml */; };
+		143A7CD31391CD5500573D7B /* haarcascade_frontalface_alt2.xml in Resources */ = {isa = PBXBuildFile; fileRef = 143A7CC51391CD5500573D7B /* haarcascade_frontalface_alt2.xml */; };
+		143A7CD41391CD5500573D7B /* haarcascade_frontalface_alt_tree.xml in Resources */ = {isa = PBXBuildFile; fileRef = 143A7CC61391CD5500573D7B /* haarcascade_frontalface_alt_tree.xml */; };
+		143A7CD51391CD5500573D7B /* haarcascade_frontalface_default.xml in Resources */ = {isa = PBXBuildFile; fileRef = 143A7CC71391CD5500573D7B /* haarcascade_frontalface_default.xml */; };
+		143A7CD61391CD5500573D7B /* haarcascade_fullbody.xml in Resources */ = {isa = PBXBuildFile; fileRef = 143A7CC81391CD5500573D7B /* haarcascade_fullbody.xml */; };
+		143A7CD71391CD5500573D7B /* haarcascade_lowerbody.xml in Resources */ = {isa = PBXBuildFile; fileRef = 143A7CC91391CD5500573D7B /* haarcascade_lowerbody.xml */; };
+		143A7CD81391CD5500573D7B /* haarcascade_profileface.xml in Resources */ = {isa = PBXBuildFile; fileRef = 143A7CCA1391CD5500573D7B /* haarcascade_profileface.xml */; };
+		143A7CD91391CD5500573D7B /* haarcascade_upperbody.xml in Resources */ = {isa = PBXBuildFile; fileRef = 143A7CCB1391CD5500573D7B /* haarcascade_upperbody.xml */; };
+		143A7CDA1391CD5500573D7B /* lenna.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 143A7CCC1391CD5500573D7B /* lenna.jpg */; };
+		143A7CDB1391CD5500573D7B /* FaceDetectTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 143A7CCE1391CD5500573D7B /* FaceDetectTestViewController.m */; };
+		143A7CDC1391CD5500573D7B /* FaceDetectTestViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 143A7CCF1391CD5500573D7B /* FaceDetectTestViewController.xib */; };
+		143A7CDD1391CD5500573D7B /* UIViewController+test.m in Sources */ = {isa = PBXBuildFile; fileRef = 143A7CD11391CD5500573D7B /* UIViewController+test.m */; };
 		1480BFD1137318A9005E2832 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1480BFD0137318A9005E2832 /* UIKit.framework */; };
 		1480BFD3137318A9005E2832 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1480BFD2137318A9005E2832 /* Foundation.framework */; };
 		1480BFD5137318A9005E2832 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1480BFD4137318A9005E2832 /* CoreGraphics.framework */; };
-		1480BFDB137318A9005E2832 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1480BFD9137318A9005E2832 /* InfoPlist.strings */; };
 		1480BFDE137318A9005E2832 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1480BFDD137318A9005E2832 /* main.m */; };
-		1480BFE1137318A9005E2832 /* OpenCVTestAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1480BFE0137318A9005E2832 /* OpenCVTestAppDelegate.m */; };
-		1480BFE4137318A9005E2832 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1480BFE2137318A9005E2832 /* MainWindow.xib */; };
-		1480BFE7137318A9005E2832 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1480BFE6137318A9005E2832 /* RootViewController.m */; };
-		1480BFEA137318A9005E2832 /* RootViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1480BFE8137318A9005E2832 /* RootViewController.xib */; };
 		14A6F091137579380078A83F /* libopencv_contrib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 14A6F087137579380078A83F /* libopencv_contrib.a */; };
 		14A6F092137579380078A83F /* libopencv_core.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 14A6F088137579380078A83F /* libopencv_core.a */; };
 		14A6F093137579380078A83F /* libopencv_features2d.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 14A6F089137579380078A83F /* libopencv_features2d.a */; };
@@ -37,46 +46,46 @@
 		14A6F098137579380078A83F /* libopencv_ml.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 14A6F08E137579380078A83F /* libopencv_ml.a */; };
 		14A6F099137579380078A83F /* libopencv_objdetect.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 14A6F08F137579380078A83F /* libopencv_objdetect.a */; };
 		14A6F09A137579380078A83F /* libopencv_video.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 14A6F090137579380078A83F /* libopencv_video.a */; };
-		14A6F0A4137581EF0078A83F /* lenna.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 14A6F0A3137581EF0078A83F /* lenna.jpg */; };
 		14DE34681373BB7A00746FC4 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14DE34671373BB7A00746FC4 /* Accelerate.framework */; };
-		14FBD89E138E922500522BFB /* MainWindow-iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 14FBD89C138E922500522BFB /* MainWindow-iPad.xib */; };
-		14FBD8B8138E93BB00522BFB /* Default-Landscape.png in Resources */ = {isa = PBXBuildFile; fileRef = 14FBD8B1138E93BB00522BFB /* Default-Landscape.png */; };
-		14FBD8B9138E93BB00522BFB /* Default-Portrait.png in Resources */ = {isa = PBXBuildFile; fileRef = 14FBD8B2138E93BB00522BFB /* Default-Portrait.png */; };
-		14FBD8BA138E93BB00522BFB /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 14FBD8B3138E93BB00522BFB /* Default.png */; };
-		14FBD8BB138E93BB00522BFB /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 14FBD8B4138E93BB00522BFB /* Default@2x.png */; };
-		14FBD8BC138E93BB00522BFB /* icon114x114.png in Resources */ = {isa = PBXBuildFile; fileRef = 14FBD8B5138E93BB00522BFB /* icon114x114.png */; };
-		14FBD8BD138E93BB00522BFB /* icon57x57.png in Resources */ = {isa = PBXBuildFile; fileRef = 14FBD8B6138E93BB00522BFB /* icon57x57.png */; };
-		14FBD8BE138E93BB00522BFB /* icon72x72.png in Resources */ = {isa = PBXBuildFile; fileRef = 14FBD8B7138E93BB00522BFB /* icon72x72.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		141CE92113753D8600E9093D /* haarcascade_frontalface_alt.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = haarcascade_frontalface_alt.xml; sourceTree = "<group>"; };
-		141CE92213753D8600E9093D /* haarcascade_frontalface_alt2.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = haarcascade_frontalface_alt2.xml; sourceTree = "<group>"; };
-		141CE92313753D8600E9093D /* haarcascade_frontalface_alt_tree.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = haarcascade_frontalface_alt_tree.xml; sourceTree = "<group>"; };
-		141CE92413753D8600E9093D /* haarcascade_frontalface_default.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = haarcascade_frontalface_default.xml; sourceTree = "<group>"; };
-		141CE92513753D8600E9093D /* haarcascade_fullbody.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = haarcascade_fullbody.xml; sourceTree = "<group>"; };
-		141CE92613753D8600E9093D /* haarcascade_lowerbody.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = haarcascade_lowerbody.xml; sourceTree = "<group>"; };
-		141CE92713753D8600E9093D /* haarcascade_profileface.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = haarcascade_profileface.xml; sourceTree = "<group>"; };
-		141CE92813753D8600E9093D /* haarcascade_upperbody.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = haarcascade_upperbody.xml; sourceTree = "<group>"; };
-		141CE92913753D8600E9093D /* FaceDetectTestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FaceDetectTestViewController.h; sourceTree = "<group>"; };
-		141CE92A13753D8600E9093D /* FaceDetectTestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FaceDetectTestViewController.m; sourceTree = "<group>"; };
-		141CE92B13753D8600E9093D /* FaceDetectTestViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FaceDetectTestViewController.xib; sourceTree = "<group>"; };
-		143A7C931391C95600573D7B /* UIViewController+test.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+test.h"; sourceTree = "<group>"; };
-		143A7C941391C95600573D7B /* UIViewController+test.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+test.m"; sourceTree = "<group>"; };
+		143A7CA01391CD2B00573D7B /* OpenCVTestAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OpenCVTestAppDelegate.h; sourceTree = "<group>"; };
+		143A7CA11391CD2B00573D7B /* OpenCVTestAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OpenCVTestAppDelegate.m; sourceTree = "<group>"; };
+		143A7CA21391CD2B00573D7B /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
+		143A7CA31391CD2B00573D7B /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
+		143A7CA81391CD3A00573D7B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		143A7CAA1391CD3A00573D7B /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = "en.lproj/MainWindow-iPad.xib"; sourceTree = "<group>"; };
+		143A7CAC1391CD3A00573D7B /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = "<group>"; };
+		143A7CAE1391CD3A00573D7B /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/RootViewController.xib; sourceTree = "<group>"; };
+		143A7CB01391CD3A00573D7B /* Default-Landscape.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-Landscape.png"; sourceTree = "<group>"; };
+		143A7CB11391CD3A00573D7B /* Default-Portrait.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-Portrait.png"; sourceTree = "<group>"; };
+		143A7CB21391CD3A00573D7B /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		143A7CB31391CD3A00573D7B /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		143A7CB41391CD3A00573D7B /* icon114x114.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon114x114.png; sourceTree = "<group>"; };
+		143A7CB51391CD3A00573D7B /* icon57x57.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon57x57.png; sourceTree = "<group>"; };
+		143A7CB61391CD3A00573D7B /* icon72x72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon72x72.png; sourceTree = "<group>"; };
+		143A7CC41391CD5500573D7B /* haarcascade_frontalface_alt.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = haarcascade_frontalface_alt.xml; sourceTree = "<group>"; };
+		143A7CC51391CD5500573D7B /* haarcascade_frontalface_alt2.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = haarcascade_frontalface_alt2.xml; sourceTree = "<group>"; };
+		143A7CC61391CD5500573D7B /* haarcascade_frontalface_alt_tree.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = haarcascade_frontalface_alt_tree.xml; sourceTree = "<group>"; };
+		143A7CC71391CD5500573D7B /* haarcascade_frontalface_default.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = haarcascade_frontalface_default.xml; sourceTree = "<group>"; };
+		143A7CC81391CD5500573D7B /* haarcascade_fullbody.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = haarcascade_fullbody.xml; sourceTree = "<group>"; };
+		143A7CC91391CD5500573D7B /* haarcascade_lowerbody.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = haarcascade_lowerbody.xml; sourceTree = "<group>"; };
+		143A7CCA1391CD5500573D7B /* haarcascade_profileface.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = haarcascade_profileface.xml; sourceTree = "<group>"; };
+		143A7CCB1391CD5500573D7B /* haarcascade_upperbody.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = haarcascade_upperbody.xml; sourceTree = "<group>"; };
+		143A7CCC1391CD5500573D7B /* lenna.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = lenna.jpg; sourceTree = "<group>"; };
+		143A7CCD1391CD5500573D7B /* FaceDetectTestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FaceDetectTestViewController.h; sourceTree = "<group>"; };
+		143A7CCE1391CD5500573D7B /* FaceDetectTestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FaceDetectTestViewController.m; sourceTree = "<group>"; };
+		143A7CCF1391CD5500573D7B /* FaceDetectTestViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FaceDetectTestViewController.xib; sourceTree = "<group>"; };
+		143A7CD01391CD5500573D7B /* UIViewController+test.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+test.h"; sourceTree = "<group>"; };
+		143A7CD11391CD5500573D7B /* UIViewController+test.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+test.m"; sourceTree = "<group>"; };
 		1480BFCC137318A9005E2832 /* OpenCVTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OpenCVTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1480BFD0137318A9005E2832 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		1480BFD2137318A9005E2832 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		1480BFD4137318A9005E2832 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		1480BFD8137318A9005E2832 /* OpenCVTest-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "OpenCVTest-Info.plist"; sourceTree = "<group>"; };
-		1480BFDA137318A9005E2832 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		1480BFDC137318A9005E2832 /* OpenCVTest-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "OpenCVTest-Prefix.pch"; sourceTree = "<group>"; };
 		1480BFDD137318A9005E2832 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		1480BFDF137318A9005E2832 /* OpenCVTestAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OpenCVTestAppDelegate.h; sourceTree = "<group>"; };
-		1480BFE0137318A9005E2832 /* OpenCVTestAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OpenCVTestAppDelegate.m; sourceTree = "<group>"; };
-		1480BFE3137318A9005E2832 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = "<group>"; };
-		1480BFE5137318A9005E2832 /* RootViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
-		1480BFE6137318A9005E2832 /* RootViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
-		1480BFE9137318A9005E2832 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/RootViewController.xib; sourceTree = "<group>"; };
 		14A6F087137579380078A83F /* libopencv_contrib.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libopencv_contrib.a; path = ../build/lib/libopencv_contrib.a; sourceTree = "<group>"; };
 		14A6F088137579380078A83F /* libopencv_core.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libopencv_core.a; path = ../build/lib/libopencv_core.a; sourceTree = "<group>"; };
 		14A6F089137579380078A83F /* libopencv_features2d.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libopencv_features2d.a; path = ../build/lib/libopencv_features2d.a; sourceTree = "<group>"; };
@@ -87,16 +96,7 @@
 		14A6F08E137579380078A83F /* libopencv_ml.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libopencv_ml.a; path = ../build/lib/libopencv_ml.a; sourceTree = "<group>"; };
 		14A6F08F137579380078A83F /* libopencv_objdetect.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libopencv_objdetect.a; path = ../build/lib/libopencv_objdetect.a; sourceTree = "<group>"; };
 		14A6F090137579380078A83F /* libopencv_video.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libopencv_video.a; path = ../build/lib/libopencv_video.a; sourceTree = "<group>"; };
-		14A6F0A3137581EF0078A83F /* lenna.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = lenna.jpg; path = OpenCVTest/lenna.jpg; sourceTree = SOURCE_ROOT; };
 		14DE34671373BB7A00746FC4 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
-		14FBD89D138E922500522BFB /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = "iPad/en.lproj/MainWindow-iPad.xib"; sourceTree = "<group>"; };
-		14FBD8B1138E93BB00522BFB /* Default-Landscape.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-Landscape.png"; sourceTree = "<group>"; };
-		14FBD8B2138E93BB00522BFB /* Default-Portrait.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-Portrait.png"; sourceTree = "<group>"; };
-		14FBD8B3138E93BB00522BFB /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
-		14FBD8B4138E93BB00522BFB /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
-		14FBD8B5138E93BB00522BFB /* icon114x114.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon114x114.png; sourceTree = "<group>"; };
-		14FBD8B6138E93BB00522BFB /* icon57x57.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon57x57.png; sourceTree = "<group>"; };
-		14FBD8B7138E93BB00522BFB /* icon72x72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon72x72.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,30 +124,59 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		141CE91F13753D8600E9093D /* TestViewController */ = {
+		143A7CA61391CD3A00573D7B /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				141CE92013753D8600E9093D /* data */,
-				141CE92913753D8600E9093D /* FaceDetectTestViewController.h */,
-				141CE92A13753D8600E9093D /* FaceDetectTestViewController.m */,
-				141CE92B13753D8600E9093D /* FaceDetectTestViewController.xib */,
+				143A7CA71391CD3A00573D7B /* InfoPlist.strings */,
+				143A7CA91391CD3A00573D7B /* MainWindow-iPad.xib */,
+				143A7CAB1391CD3A00573D7B /* MainWindow.xib */,
+				143A7CAD1391CD3A00573D7B /* RootViewController.xib */,
+				143A7CAF1391CD3A00573D7B /* image */,
+			);
+			name = Resources;
+			path = OpenCVTest/Resources;
+			sourceTree = "<group>";
+		};
+		143A7CAF1391CD3A00573D7B /* image */ = {
+			isa = PBXGroup;
+			children = (
+				143A7CB01391CD3A00573D7B /* Default-Landscape.png */,
+				143A7CB11391CD3A00573D7B /* Default-Portrait.png */,
+				143A7CB21391CD3A00573D7B /* Default.png */,
+				143A7CB31391CD3A00573D7B /* Default@2x.png */,
+				143A7CB41391CD3A00573D7B /* icon114x114.png */,
+				143A7CB51391CD3A00573D7B /* icon57x57.png */,
+				143A7CB61391CD3A00573D7B /* icon72x72.png */,
+			);
+			path = image;
+			sourceTree = "<group>";
+		};
+		143A7CC21391CD5500573D7B /* TestViewController */ = {
+			isa = PBXGroup;
+			children = (
+				143A7CD01391CD5500573D7B /* UIViewController+test.h */,
+				143A7CD11391CD5500573D7B /* UIViewController+test.m */,
+				143A7CCD1391CD5500573D7B /* FaceDetectTestViewController.h */,
+				143A7CCE1391CD5500573D7B /* FaceDetectTestViewController.m */,
+				143A7CCF1391CD5500573D7B /* FaceDetectTestViewController.xib */,
+				143A7CC31391CD5500573D7B /* data */,
 			);
 			name = TestViewController;
 			path = OpenCVTest/TestViewController;
 			sourceTree = "<group>";
 		};
-		141CE92013753D8600E9093D /* data */ = {
+		143A7CC31391CD5500573D7B /* data */ = {
 			isa = PBXGroup;
 			children = (
-				14A6F0A3137581EF0078A83F /* lenna.jpg */,
-				141CE92113753D8600E9093D /* haarcascade_frontalface_alt.xml */,
-				141CE92213753D8600E9093D /* haarcascade_frontalface_alt2.xml */,
-				141CE92313753D8600E9093D /* haarcascade_frontalface_alt_tree.xml */,
-				141CE92413753D8600E9093D /* haarcascade_frontalface_default.xml */,
-				141CE92513753D8600E9093D /* haarcascade_fullbody.xml */,
-				141CE92613753D8600E9093D /* haarcascade_lowerbody.xml */,
-				141CE92713753D8600E9093D /* haarcascade_profileface.xml */,
-				141CE92813753D8600E9093D /* haarcascade_upperbody.xml */,
+				143A7CC41391CD5500573D7B /* haarcascade_frontalface_alt.xml */,
+				143A7CC51391CD5500573D7B /* haarcascade_frontalface_alt2.xml */,
+				143A7CC61391CD5500573D7B /* haarcascade_frontalface_alt_tree.xml */,
+				143A7CC71391CD5500573D7B /* haarcascade_frontalface_default.xml */,
+				143A7CC81391CD5500573D7B /* haarcascade_fullbody.xml */,
+				143A7CC91391CD5500573D7B /* haarcascade_lowerbody.xml */,
+				143A7CCA1391CD5500573D7B /* haarcascade_profileface.xml */,
+				143A7CCB1391CD5500573D7B /* haarcascade_upperbody.xml */,
+				143A7CCC1391CD5500573D7B /* lenna.jpg */,
 			);
 			path = data;
 			sourceTree = "<group>";
@@ -155,9 +184,10 @@
 		1480BFC1137318A9005E2832 = {
 			isa = PBXGroup;
 			children = (
-				141CE91F13753D8600E9093D /* TestViewController */,
 				1480BFD6137318A9005E2832 /* OpenCVTest */,
-				14DE34391373B3D900746FC4 /* Libraries */,
+				143A7CC21391CD5500573D7B /* TestViewController */,
+				143A7CA61391CD3A00573D7B /* Resources */,
+				14DE34391373B3D900746FC4 /* Static libraries */,
 				1480BFCF137318A9005E2832 /* Frameworks */,
 				1480BFCD137318A9005E2832 /* Products */,
 			);
@@ -185,33 +215,18 @@
 		1480BFD6137318A9005E2832 /* OpenCVTest */ = {
 			isa = PBXGroup;
 			children = (
-				143A7C931391C95600573D7B /* UIViewController+test.h */,
-				143A7C941391C95600573D7B /* UIViewController+test.m */,
-				14FBD8B0138E93BA00522BFB /* image */,
-				14FBD89B138E922300522BFB /* iPad */,
-				1480BFDF137318A9005E2832 /* OpenCVTestAppDelegate.h */,
-				1480BFE0137318A9005E2832 /* OpenCVTestAppDelegate.m */,
-				1480BFE2137318A9005E2832 /* MainWindow.xib */,
-				1480BFE5137318A9005E2832 /* RootViewController.h */,
-				1480BFE6137318A9005E2832 /* RootViewController.m */,
-				1480BFE8137318A9005E2832 /* RootViewController.xib */,
-				1480BFD7137318A9005E2832 /* Supporting Files */,
+				143A7CA01391CD2B00573D7B /* OpenCVTestAppDelegate.h */,
+				143A7CA11391CD2B00573D7B /* OpenCVTestAppDelegate.m */,
+				143A7CA21391CD2B00573D7B /* RootViewController.h */,
+				143A7CA31391CD2B00573D7B /* RootViewController.m */,
+				1480BFD8137318A9005E2832 /* OpenCVTest-Info.plist */,
+				1480BFDC137318A9005E2832 /* OpenCVTest-Prefix.pch */,
+				1480BFDD137318A9005E2832 /* main.m */,
 			);
 			path = OpenCVTest;
 			sourceTree = "<group>";
 		};
-		1480BFD7137318A9005E2832 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				1480BFD8137318A9005E2832 /* OpenCVTest-Info.plist */,
-				1480BFD9137318A9005E2832 /* InfoPlist.strings */,
-				1480BFDC137318A9005E2832 /* OpenCVTest-Prefix.pch */,
-				1480BFDD137318A9005E2832 /* main.m */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		14DE34391373B3D900746FC4 /* Libraries */ = {
+		14DE34391373B3D900746FC4 /* Static libraries */ = {
 			isa = PBXGroup;
 			children = (
 				14A6F087137579380078A83F /* libopencv_contrib.a */,
@@ -225,30 +240,7 @@
 				14A6F08F137579380078A83F /* libopencv_objdetect.a */,
 				14A6F090137579380078A83F /* libopencv_video.a */,
 			);
-			name = Libraries;
-			sourceTree = "<group>";
-		};
-		14FBD89B138E922300522BFB /* iPad */ = {
-			isa = PBXGroup;
-			children = (
-				14FBD89C138E922500522BFB /* MainWindow-iPad.xib */,
-			);
-			name = iPad;
-			sourceTree = "<group>";
-		};
-		14FBD8B0138E93BA00522BFB /* image */ = {
-			isa = PBXGroup;
-			children = (
-				14FBD8B1138E93BB00522BFB /* Default-Landscape.png */,
-				14FBD8B2138E93BB00522BFB /* Default-Portrait.png */,
-				14FBD8B3138E93BB00522BFB /* Default.png */,
-				14FBD8B4138E93BB00522BFB /* Default@2x.png */,
-				14FBD8B5138E93BB00522BFB /* icon114x114.png */,
-				14FBD8B6138E93BB00522BFB /* icon57x57.png */,
-				14FBD8B7138E93BB00522BFB /* icon72x72.png */,
-			);
-			name = image;
-			path = Resource/image;
+			name = "Static libraries";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -298,27 +290,27 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1480BFDB137318A9005E2832 /* InfoPlist.strings in Resources */,
-				1480BFE4137318A9005E2832 /* MainWindow.xib in Resources */,
-				1480BFEA137318A9005E2832 /* RootViewController.xib in Resources */,
-				141CE92C13753D8600E9093D /* haarcascade_frontalface_alt.xml in Resources */,
-				141CE92D13753D8600E9093D /* haarcascade_frontalface_alt2.xml in Resources */,
-				141CE92E13753D8600E9093D /* haarcascade_frontalface_alt_tree.xml in Resources */,
-				141CE92F13753D8600E9093D /* haarcascade_frontalface_default.xml in Resources */,
-				141CE93013753D8600E9093D /* haarcascade_fullbody.xml in Resources */,
-				141CE93113753D8600E9093D /* haarcascade_lowerbody.xml in Resources */,
-				141CE93213753D8600E9093D /* haarcascade_profileface.xml in Resources */,
-				141CE93313753D8600E9093D /* haarcascade_upperbody.xml in Resources */,
-				141CE93513753D8600E9093D /* FaceDetectTestViewController.xib in Resources */,
-				14A6F0A4137581EF0078A83F /* lenna.jpg in Resources */,
-				14FBD89E138E922500522BFB /* MainWindow-iPad.xib in Resources */,
-				14FBD8B8138E93BB00522BFB /* Default-Landscape.png in Resources */,
-				14FBD8B9138E93BB00522BFB /* Default-Portrait.png in Resources */,
-				14FBD8BA138E93BB00522BFB /* Default.png in Resources */,
-				14FBD8BB138E93BB00522BFB /* Default@2x.png in Resources */,
-				14FBD8BC138E93BB00522BFB /* icon114x114.png in Resources */,
-				14FBD8BD138E93BB00522BFB /* icon57x57.png in Resources */,
-				14FBD8BE138E93BB00522BFB /* icon72x72.png in Resources */,
+				143A7CB71391CD3A00573D7B /* InfoPlist.strings in Resources */,
+				143A7CB81391CD3A00573D7B /* MainWindow-iPad.xib in Resources */,
+				143A7CB91391CD3A00573D7B /* MainWindow.xib in Resources */,
+				143A7CBA1391CD3A00573D7B /* RootViewController.xib in Resources */,
+				143A7CBB1391CD3A00573D7B /* Default-Landscape.png in Resources */,
+				143A7CBC1391CD3A00573D7B /* Default-Portrait.png in Resources */,
+				143A7CBD1391CD3A00573D7B /* Default.png in Resources */,
+				143A7CBE1391CD3A00573D7B /* Default@2x.png in Resources */,
+				143A7CBF1391CD3A00573D7B /* icon114x114.png in Resources */,
+				143A7CC01391CD3A00573D7B /* icon57x57.png in Resources */,
+				143A7CC11391CD3A00573D7B /* icon72x72.png in Resources */,
+				143A7CD21391CD5500573D7B /* haarcascade_frontalface_alt.xml in Resources */,
+				143A7CD31391CD5500573D7B /* haarcascade_frontalface_alt2.xml in Resources */,
+				143A7CD41391CD5500573D7B /* haarcascade_frontalface_alt_tree.xml in Resources */,
+				143A7CD51391CD5500573D7B /* haarcascade_frontalface_default.xml in Resources */,
+				143A7CD61391CD5500573D7B /* haarcascade_fullbody.xml in Resources */,
+				143A7CD71391CD5500573D7B /* haarcascade_lowerbody.xml in Resources */,
+				143A7CD81391CD5500573D7B /* haarcascade_profileface.xml in Resources */,
+				143A7CD91391CD5500573D7B /* haarcascade_upperbody.xml in Resources */,
+				143A7CDA1391CD5500573D7B /* lenna.jpg in Resources */,
+				143A7CDC1391CD5500573D7B /* FaceDetectTestViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -330,46 +322,46 @@
 			buildActionMask = 2147483647;
 			files = (
 				1480BFDE137318A9005E2832 /* main.m in Sources */,
-				1480BFE1137318A9005E2832 /* OpenCVTestAppDelegate.m in Sources */,
-				1480BFE7137318A9005E2832 /* RootViewController.m in Sources */,
-				141CE93413753D8600E9093D /* FaceDetectTestViewController.m in Sources */,
-				143A7C951391C95600573D7B /* UIViewController+test.m in Sources */,
+				143A7CA41391CD2B00573D7B /* OpenCVTestAppDelegate.m in Sources */,
+				143A7CA51391CD2B00573D7B /* RootViewController.m in Sources */,
+				143A7CDB1391CD5500573D7B /* FaceDetectTestViewController.m in Sources */,
+				143A7CDD1391CD5500573D7B /* UIViewController+test.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		1480BFD9137318A9005E2832 /* InfoPlist.strings */ = {
+		143A7CA71391CD3A00573D7B /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
-				1480BFDA137318A9005E2832 /* en */,
+				143A7CA81391CD3A00573D7B /* en */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
-		1480BFE2137318A9005E2832 /* MainWindow.xib */ = {
+		143A7CA91391CD3A00573D7B /* MainWindow-iPad.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
-				1480BFE3137318A9005E2832 /* en */,
+				143A7CAA1391CD3A00573D7B /* en */,
+			);
+			name = "MainWindow-iPad.xib";
+			sourceTree = "<group>";
+		};
+		143A7CAB1391CD3A00573D7B /* MainWindow.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				143A7CAC1391CD3A00573D7B /* en */,
 			);
 			name = MainWindow.xib;
 			sourceTree = "<group>";
 		};
-		1480BFE8137318A9005E2832 /* RootViewController.xib */ = {
+		143A7CAD1391CD3A00573D7B /* RootViewController.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
-				1480BFE9137318A9005E2832 /* en */,
+				143A7CAE1391CD3A00573D7B /* en */,
 			);
 			name = RootViewController.xib;
-			sourceTree = "<group>";
-		};
-		14FBD89C138E922500522BFB /* MainWindow-iPad.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				14FBD89D138E922500522BFB /* en */,
-			);
-			name = "MainWindow-iPad.xib";
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
