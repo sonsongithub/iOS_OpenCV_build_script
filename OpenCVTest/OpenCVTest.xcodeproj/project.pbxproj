@@ -32,6 +32,8 @@
 		143A7CDB1391CD5500573D7B /* FaceDetectTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 143A7CCE1391CD5500573D7B /* FaceDetectTestViewController.m */; };
 		143A7CDC1391CD5500573D7B /* FaceDetectTestViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 143A7CCF1391CD5500573D7B /* FaceDetectTestViewController.xib */; };
 		143A7CDD1391CD5500573D7B /* UIViewController+test.m in Sources */ = {isa = PBXBuildFile; fileRef = 143A7CD11391CD5500573D7B /* UIViewController+test.m */; };
+		143A7CF51391D16200573D7B /* QuartzHelpLibrary.m in Sources */ = {isa = PBXBuildFile; fileRef = 143A7CF41391D16200573D7B /* QuartzHelpLibrary.m */; };
+		143A7CF81391D17000573D7B /* OpenCVHelpLibrary.m in Sources */ = {isa = PBXBuildFile; fileRef = 143A7CF71391D17000573D7B /* OpenCVHelpLibrary.m */; };
 		1480BFD1137318A9005E2832 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1480BFD0137318A9005E2832 /* UIKit.framework */; };
 		1480BFD3137318A9005E2832 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1480BFD2137318A9005E2832 /* Foundation.framework */; };
 		1480BFD5137318A9005E2832 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1480BFD4137318A9005E2832 /* CoreGraphics.framework */; };
@@ -79,6 +81,10 @@
 		143A7CCF1391CD5500573D7B /* FaceDetectTestViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FaceDetectTestViewController.xib; sourceTree = "<group>"; };
 		143A7CD01391CD5500573D7B /* UIViewController+test.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+test.h"; sourceTree = "<group>"; };
 		143A7CD11391CD5500573D7B /* UIViewController+test.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+test.m"; sourceTree = "<group>"; };
+		143A7CF31391D16200573D7B /* QuartzHelpLibrary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = QuartzHelpLibrary.h; path = "../../Quartz-Help-Library/QuartzHelpLibrary.h"; sourceTree = "<group>"; };
+		143A7CF41391D16200573D7B /* QuartzHelpLibrary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = QuartzHelpLibrary.m; path = "../../Quartz-Help-Library/QuartzHelpLibrary.m"; sourceTree = "<group>"; };
+		143A7CF61391D17000573D7B /* OpenCVHelpLibrary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OpenCVHelpLibrary.h; path = "../../OpenCV-Help-Library/OpenCVHelpLibrary.h"; sourceTree = "<group>"; };
+		143A7CF71391D17000573D7B /* OpenCVHelpLibrary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OpenCVHelpLibrary.m; path = "../../OpenCV-Help-Library/OpenCVHelpLibrary.m"; sourceTree = "<group>"; };
 		1480BFCC137318A9005E2832 /* OpenCVTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OpenCVTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1480BFD0137318A9005E2832 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		1480BFD2137318A9005E2832 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -181,9 +187,21 @@
 			path = data;
 			sourceTree = "<group>";
 		};
+		143A7CF21391D14F00573D7B /* Help Library */ = {
+			isa = PBXGroup;
+			children = (
+				143A7CF61391D17000573D7B /* OpenCVHelpLibrary.h */,
+				143A7CF71391D17000573D7B /* OpenCVHelpLibrary.m */,
+				143A7CF31391D16200573D7B /* QuartzHelpLibrary.h */,
+				143A7CF41391D16200573D7B /* QuartzHelpLibrary.m */,
+			);
+			name = "Help Library";
+			sourceTree = "<group>";
+		};
 		1480BFC1137318A9005E2832 = {
 			isa = PBXGroup;
 			children = (
+				143A7CF21391D14F00573D7B /* Help Library */,
 				1480BFD6137318A9005E2832 /* OpenCVTest */,
 				143A7CC21391CD5500573D7B /* TestViewController */,
 				143A7CA61391CD3A00573D7B /* Resources */,
@@ -326,6 +344,8 @@
 				143A7CA51391CD2B00573D7B /* RootViewController.m in Sources */,
 				143A7CDB1391CD5500573D7B /* FaceDetectTestViewController.m in Sources */,
 				143A7CDD1391CD5500573D7B /* UIViewController+test.m in Sources */,
+				143A7CF51391D16200573D7B /* QuartzHelpLibrary.m in Sources */,
+				143A7CF81391D17000573D7B /* OpenCVHelpLibrary.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

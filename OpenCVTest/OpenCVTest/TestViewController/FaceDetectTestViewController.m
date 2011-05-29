@@ -32,49 +32,31 @@
 
 #import <opencv/cv.h>
 
+#import "OpenCVHelpLibrary.h"
+
 @implementation FaceDetectTestViewController
 
 + (NSString*)testDescription {
 	return NSLocalizedString(@"Face detection", nil);
 }
 
-/*
-
-- (IplImage *)CreateIplImageFromUIImage:(UIImage *)image {
-	CGImageRef imageRef = image.CGImage;
-	
-	CGColorSpaceRef colorSpace = CGColorSpaceCreateDeviceRGB();
-	IplImage *iplimage = cvCreateImage(cvSize(image.size.width, image.size.height), IPL_DEPTH_8U, 4);
-	CGContextRef contextRef = CGBitmapContextCreate(iplimage->imageData, iplimage->width, iplimage->height,
-													iplimage->depth, iplimage->widthStep,
-													colorSpace, kCGImageAlphaPremultipliedLast|kCGBitmapByteOrderDefault);
-	CGContextDrawImage(contextRef, CGRectMake(0, 0, image.size.width, image.size.height), imageRef);
-	CGContextRelease(contextRef);
-	CGColorSpaceRelease(colorSpace);
-	
-	IplImage *ret = cvCreateImage(cvGetSize(iplimage), IPL_DEPTH_8U, 3);
-	cvCvtColor(iplimage, ret, CV_RGBA2BGR);
-	cvReleaseImage(&iplimage);
-	
-	return ret;
-}
-
 - (void)test {
 	UIImage *source = [UIImage imageNamed:@"lenna.jpg"];
-	IplImage *image = [self CreateIplImageFromUIImage:source];
+	IplImage *image = CGCreateIplImageWithCGImage([source CGImage], CV_LOAD_IMAGE_COLOR);
 	
-	// Scaling down
+	// make image pyramid
 	IplImage *small_image = cvCreateImage(cvSize(image->width/2,image->height/2), IPL_DEPTH_8U, 3);
 	cvPyrDown(image, small_image, CV_GAUSSIAN_5x5);
 	
-	// Load XML
+	// Load XML face learning data
 	NSString *path = [[NSBundle mainBundle] pathForResource:@"haarcascade_frontalface_default" ofType:@"xml"];
 	CvHaarClassifierCascade* cascade = (CvHaarClassifierCascade*)cvLoad([path cStringUsingEncoding:NSASCIIStringEncoding], NULL, NULL, NULL);
 	CvMemStorage* storage = cvCreateMemStorage(0);
 	
 	// Detect faces and draw rectangle on them
 	CvSeq* faces = cvHaarDetectObjects(small_image, cascade, storage, 1.2f, 2, CV_HAAR_DO_CANNY_PRUNING, cvSize(0,0), cvSize(20, 20));
-//	CvSeq* faces = cvHaarDetectObjects(small_image, cascade, storage, 1.2f, 2, CV_HAAR_DO_CANNY_PRUNING, cvSize(20, 20));
+	
+	// release image prymid
 	cvReleaseImage(&small_image);
 	
 	NSLog(@"%d", faces->total);
@@ -114,14 +96,11 @@
 	cvReleaseMemStorage(&storage);
 	cvReleaseHaarClassifierCascade(&cascade);
 }
-
-*/
-
+ 
 - (void)viewWillAppear:(BOOL)animated {
 	[super viewWillAppear:animated];
 	[self setTitle:[[self class] testDescription]];
-	
-//	[self test];
+	[self test];
 }
 
 - (void)dealloc {
