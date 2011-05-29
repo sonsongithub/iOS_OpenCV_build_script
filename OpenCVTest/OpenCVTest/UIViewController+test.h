@@ -1,6 +1,6 @@
 /*
  * OpenCVTest
- * RootViewController.h
+ * UIViewController+test.h
  *
  * Copyright (c) Yuichi YOSHIDA, 11/05/07
  * All rights reserved.
@@ -30,7 +30,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface RootViewController : UITableViewController {
-	NSMutableArray *testNames;
-}
+@interface UIViewController(test)
+
++ (NSString*)testDescription;
+
 @end

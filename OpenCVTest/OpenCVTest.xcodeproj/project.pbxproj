@@ -17,6 +17,7 @@
 		141CE93313753D8600E9093D /* haarcascade_upperbody.xml in Resources */ = {isa = PBXBuildFile; fileRef = 141CE92813753D8600E9093D /* haarcascade_upperbody.xml */; };
 		141CE93413753D8600E9093D /* FaceDetectTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 141CE92A13753D8600E9093D /* FaceDetectTestViewController.m */; };
 		141CE93513753D8600E9093D /* FaceDetectTestViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 141CE92B13753D8600E9093D /* FaceDetectTestViewController.xib */; };
+		143A7C951391C95600573D7B /* UIViewController+test.m in Sources */ = {isa = PBXBuildFile; fileRef = 143A7C941391C95600573D7B /* UIViewController+test.m */; };
 		1480BFD1137318A9005E2832 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1480BFD0137318A9005E2832 /* UIKit.framework */; };
 		1480BFD3137318A9005E2832 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1480BFD2137318A9005E2832 /* Foundation.framework */; };
 		1480BFD5137318A9005E2832 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1480BFD4137318A9005E2832 /* CoreGraphics.framework */; };
@@ -60,6 +61,8 @@
 		141CE92913753D8600E9093D /* FaceDetectTestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FaceDetectTestViewController.h; sourceTree = "<group>"; };
 		141CE92A13753D8600E9093D /* FaceDetectTestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FaceDetectTestViewController.m; sourceTree = "<group>"; };
 		141CE92B13753D8600E9093D /* FaceDetectTestViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FaceDetectTestViewController.xib; sourceTree = "<group>"; };
+		143A7C931391C95600573D7B /* UIViewController+test.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+test.h"; sourceTree = "<group>"; };
+		143A7C941391C95600573D7B /* UIViewController+test.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+test.m"; sourceTree = "<group>"; };
 		1480BFCC137318A9005E2832 /* OpenCVTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OpenCVTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1480BFD0137318A9005E2832 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		1480BFD2137318A9005E2832 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -182,6 +185,8 @@
 		1480BFD6137318A9005E2832 /* OpenCVTest */ = {
 			isa = PBXGroup;
 			children = (
+				143A7C931391C95600573D7B /* UIViewController+test.h */,
+				143A7C941391C95600573D7B /* UIViewController+test.m */,
 				14FBD8B0138E93BA00522BFB /* image */,
 				14FBD89B138E922300522BFB /* iPad */,
 				1480BFDF137318A9005E2832 /* OpenCVTestAppDelegate.h */,
@@ -328,6 +333,7 @@
 				1480BFE1137318A9005E2832 /* OpenCVTestAppDelegate.m in Sources */,
 				1480BFE7137318A9005E2832 /* RootViewController.m in Sources */,
 				141CE93413753D8600E9093D /* FaceDetectTestViewController.m in Sources */,
+				143A7C951391C95600573D7B /* UIViewController+test.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
