@@ -2760,9 +2760,9 @@
 		<string>PrimaryDocumentVisibleCharacterRange</string>
 		<string>HideAllIssues</string>
 		<string>PrimaryDocumentSelectedCharacterRange</string>
-		<real>328322567.94162202</real>
-		<string>{2614, 2613}</string>
-		<string>{5159, 0}</string>
+		<real>328322668.968454</real>
+		<string>{2614, 2658}</string>
+		<string>{5208, 0}</string>
 		<string>-viewWillAppear:</string>
 		<string>Xcode.IDEKit.EditorDocument.SourceCode</string>
 		<dict>
@@ -8523,7 +8523,7 @@
 				</dict>
 			</array>
 		</dict>
-		<real>328322541.36875999</real>
+		<real>328322626.02139598</real>
 		<string>{0, 1760}</string>
 		<string>{1707, 45}</string>
 		<dict>
@@ -8618,7 +8618,7 @@
 				</dict>
 			</array>
 		</dict>
-		<real>328322536.65702498</real>
+		<real>328322626.783135</real>
 		<string>{0, 1739}</string>
 		<string>{1340, 0}</string>
 		<dict>
@@ -8714,7 +8714,7 @@
 				</dict>
 			</array>
 		</dict>
-		<real>328322492.63613403</real>
+		<real>328322600.16844499</real>
 		<string>{0, 1745}</string>
 		<string>{1739, 0}</string>
 		<dict>
@@ -8951,9 +8951,9 @@
 				</dict>
 			</array>
 		</dict>
-		<real>328322567.94110799</real>
-		<string>{2614, 2613}</string>
-		<string>{5159, 0}</string>
+		<real>328322668.96782303</real>
+		<string>{2614, 2658}</string>
+		<string>{5208, 0}</string>
 		<dict>
 			<key>$class</key>
 			<dict>
@@ -9037,8 +9037,8 @@
     s = 0;
 }</string>
 		</dict>
-		<real>328322303.23597002</real>
-		<string>{505, 2873}</string>
+		<real>328322607.89581501</real>
+		<string>{632, 2746}</string>
 		<string>{1950, 0}</string>
 		<dict>
 			<key>$class</key>
@@ -10699,7 +10699,7 @@
 				<integer>851</integer>
 			</dict>
 			<key>NS.time</key>
-			<real>328322563.50581902</real>
+			<real>328322668.29358101</real>
 		</dict>
 		<dict>
 			<key>$classes</key>
@@ -10710,7 +10710,7 @@
 			<key>$classname</key>
 			<string>NSDate</string>
 		</dict>
-		<string>Today at 9:42</string>
+		<string>Today at 9:44</string>
 		<integer>106</integer>
 		<dict>
 			<key>$class</key>
@@ -10811,7 +10811,7 @@
 				<integer>859</integer>
 			</dict>
 		</dict>
-		<string>file://localhost/Users/sonson/code/iOS_OpenCV_build_script/OpenCVTest/OpenCVTest/TestViewController/UIViewController+test.m</string>
+		<string>file://localhost/Users/sonson/code/iOS_OpenCV_build_script/OpenCVTest/OpenCVTest/TestViewController/FaceDetectTestViewController.h</string>
 		<dict>
 			<key>$class</key>
 			<dict>
@@ -10829,7 +10829,7 @@
 				<integer>861</integer>
 			</dict>
 		</dict>
-		<string>file://localhost/Users/sonson/code/iOS_OpenCV_build_script/OpenCVTest/OpenCVTest/TestViewController/FaceDetectTestViewController.h</string>
+		<string>file://localhost/Users/sonson/code/iOS_OpenCV_build_script/OpenCVTest/OpenCVTest/TestViewController/UIViewController+test.m</string>
 		<dict>
 			<key>$class</key>
 			<dict>
@@ -10847,7 +10847,7 @@
 				<integer>863</integer>
 			</dict>
 		</dict>
-		<string>file://localhost/Users/sonson/code/iOS_OpenCV_build_script/OpenCVTest/OpenCVTest/TestViewController/UIViewController+test.h</string>
+		<string>file://localhost/Users/sonson/code/iOS_OpenCV_build_script/OpenCVTest/OpenCVTest/RootViewController.m</string>
 		<dict>
 			<key>$class</key>
 			<dict>
@@ -10865,7 +10865,7 @@
 				<integer>865</integer>
 			</dict>
 		</dict>
-		<string>file://localhost/Users/sonson/code/iOS_OpenCV_build_script/OpenCVTest/OpenCVTest/OpenCVTestAppDelegate.h</string>
+		<string>file://localhost/Users/sonson/code/iOS_OpenCV_build_script/OpenCVTest/OpenCVTest/RootViewController.h</string>
 		<dict>
 			<key>$class</key>
 			<dict>
@@ -10883,7 +10883,7 @@
 				<integer>867</integer>
 			</dict>
 		</dict>
-		<string>file://localhost/Users/sonson/code/iOS_OpenCV_build_script/OpenCVTest/OpenCVTest/OpenCVTestAppDelegate.m</string>
+		<string>file://localhost/Users/sonson/code/iOS_OpenCV_build_script/OpenCVTest/OpenCVTest/TestViewController/UIViewController+test.h</string>
 		<dict>
 			<key>$class</key>
 			<dict>
@@ -10901,7 +10901,7 @@
 				<integer>869</integer>
 			</dict>
 		</dict>
-		<string>file://localhost/Users/sonson/code/iOS_OpenCV_build_script/OpenCVTest/OpenCVTest/RootViewController.h</string>
+		<string>file://localhost/Users/sonson/code/iOS_OpenCV_build_script/OpenCVTest/OpenCVTest/OpenCVTestAppDelegate.h</string>
 		<dict>
 			<key>$class</key>
 			<dict>
@@ -10919,7 +10919,7 @@
 				<integer>871</integer>
 			</dict>
 		</dict>
-		<string>file://localhost/Users/sonson/code/iOS_OpenCV_build_script/OpenCVTest/OpenCVTest/Resources/en.lproj/InfoPlist.strings</string>
+		<string>file://localhost/Users/sonson/code/iOS_OpenCV_build_script/OpenCVTest/OpenCVTest/OpenCVTestAppDelegate.m</string>
 		<dict>
 			<key>$class</key>
 			<dict>
@@ -10937,7 +10937,7 @@
 				<integer>873</integer>
 			</dict>
 		</dict>
-		<string>file://localhost/Users/sonson/code/iOS_OpenCV_build_script/OpenCVTest/OpenCVTest/Resources/en.lproj/MainWindow-iPad.xib</string>
+		<string>file://localhost/Users/sonson/code/iOS_OpenCV_build_script/OpenCVTest/OpenCVTest/Resources/en.lproj/InfoPlist.strings</string>
 		<dict>
 			<key>$class</key>
 			<dict>
@@ -10955,7 +10955,7 @@
 				<integer>875</integer>
 			</dict>
 		</dict>
-		<string>file://localhost/Users/sonson/code/iOS_OpenCV_build_script/OpenCVTest/OpenCVTest/Resources/en.lproj/MainWindow.xib</string>
+		<string>file://localhost/Users/sonson/code/iOS_OpenCV_build_script/OpenCVTest/OpenCVTest/Resources/en.lproj/MainWindow-iPad.xib</string>
 	</array>
 	<key>$top</key>
 	<dict>
