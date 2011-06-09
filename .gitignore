@@ -3,3 +3,4 @@ build
 .DS_Store
 OpenCV-2.2.0
 *.tar.bz2
+xcuserdata
