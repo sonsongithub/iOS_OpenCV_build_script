@@ -32,7 +32,9 @@
 
 
 @interface FaceDetectTestViewController : UIViewController {
-    
+    IBOutlet UIImageView *imageView;
+	NSMutableArray *views;
+	NSMutableArray *imageFileNames;
+	int imageCounter;
 }
-
 @end

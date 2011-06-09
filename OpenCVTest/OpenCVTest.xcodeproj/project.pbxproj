@@ -34,6 +34,7 @@
 		143A7CDD1391CD5500573D7B /* UIViewController+test.m in Sources */ = {isa = PBXBuildFile; fileRef = 143A7CD11391CD5500573D7B /* UIViewController+test.m */; };
 		143A7CF51391D16200573D7B /* QuartzHelpLibrary.m in Sources */ = {isa = PBXBuildFile; fileRef = 143A7CF41391D16200573D7B /* QuartzHelpLibrary.m */; };
 		143A7CF81391D17000573D7B /* OpenCVHelpLibrary.m in Sources */ = {isa = PBXBuildFile; fileRef = 143A7CF71391D17000573D7B /* OpenCVHelpLibrary.m */; };
+		1443B21B13A0B407009C0B19 /* Steve.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1443B21A13A0B407009C0B19 /* Steve.jpg */; };
 		1480BFD1137318A9005E2832 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1480BFD0137318A9005E2832 /* UIKit.framework */; };
 		1480BFD3137318A9005E2832 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1480BFD2137318A9005E2832 /* Foundation.framework */; };
 		1480BFD5137318A9005E2832 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1480BFD4137318A9005E2832 /* CoreGraphics.framework */; };
@@ -85,6 +86,7 @@
 		143A7CF41391D16200573D7B /* QuartzHelpLibrary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = QuartzHelpLibrary.m; path = "../../Quartz-Help-Library/QuartzHelpLibrary.m"; sourceTree = "<group>"; };
 		143A7CF61391D17000573D7B /* OpenCVHelpLibrary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OpenCVHelpLibrary.h; path = "../../OpenCV-Help-Library/OpenCVHelpLibrary.h"; sourceTree = "<group>"; };
 		143A7CF71391D17000573D7B /* OpenCVHelpLibrary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OpenCVHelpLibrary.m; path = "../../OpenCV-Help-Library/OpenCVHelpLibrary.m"; sourceTree = "<group>"; };
+		1443B21A13A0B407009C0B19 /* Steve.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Steve.jpg; sourceTree = "<group>"; };
 		1480BFCC137318A9005E2832 /* OpenCVTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OpenCVTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1480BFD0137318A9005E2832 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		1480BFD2137318A9005E2832 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -174,6 +176,8 @@
 		143A7CC31391CD5500573D7B /* data */ = {
 			isa = PBXGroup;
 			children = (
+				143A7CCC1391CD5500573D7B /* lenna.jpg */,
+				1443B21A13A0B407009C0B19 /* Steve.jpg */,
 				143A7CC41391CD5500573D7B /* haarcascade_frontalface_alt.xml */,
 				143A7CC51391CD5500573D7B /* haarcascade_frontalface_alt2.xml */,
 				143A7CC61391CD5500573D7B /* haarcascade_frontalface_alt_tree.xml */,
@@ -182,7 +186,6 @@
 				143A7CC91391CD5500573D7B /* haarcascade_lowerbody.xml */,
 				143A7CCA1391CD5500573D7B /* haarcascade_profileface.xml */,
 				143A7CCB1391CD5500573D7B /* haarcascade_upperbody.xml */,
-				143A7CCC1391CD5500573D7B /* lenna.jpg */,
 			);
 			path = data;
 			sourceTree = "<group>";
@@ -329,6 +332,7 @@
 				143A7CD91391CD5500573D7B /* haarcascade_upperbody.xml in Resources */,
 				143A7CDA1391CD5500573D7B /* lenna.jpg in Resources */,
 				143A7CDC1391CD5500573D7B /* FaceDetectTestViewController.xib in Resources */,
+				1443B21B13A0B407009C0B19 /* Steve.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -34,76 +34,120 @@
 
 #import "OpenCVHelpLibrary.h"
 
+@interface FaceDetectTestViewController(private)
+
+- (void)changed:(id)sender;
+- (void)removeAllFaceAnnotation;
+- (void)detectFaceWithImageName:(NSString*)name;
+
+@end
+
 @implementation FaceDetectTestViewController
 
-+ (NSString*)testDescription {
-	return NSLocalizedString(@"Face detection", nil);
+#pragma mark - IBAction
+
+- (void)changed:(id)sender {
+	imageCounter++;
+	if (imageCounter == [imageFileNames count]) {
+		imageCounter = 0;
+	}
+	NSString *name = [imageFileNames objectAtIndex:imageCounter];
+	[self detectFaceWithImageName:name];
 }
 
-- (void)test {
-	UIImage *source = [UIImage imageNamed:@"lenna.jpg"];
-	IplImage *image = CGCreateIplImageWithCGImage([source CGImage], CV_LOAD_IMAGE_COLOR);
+#pragma mark - Instance method
+
+- (void)removeAllFaceAnnotation {
+	for (UIView *v in views)
+		[v removeFromSuperview];
+	[views removeAllObjects];
+}
+
+- (void)detectFaceWithImageName:(NSString*)name {
+	[self removeAllFaceAnnotation];
 	
-	// make image pyramid
-	IplImage *small_image = cvCreateImage(cvSize(image->width/2,image->height/2), IPL_DEPTH_8U, 3);
+	// make half image with gaussian blur
+	float scale = 2;
+	UIImage *source = [UIImage imageNamed:name];
+	IplImage *image = CGCreateIplImageWithCGImage(source.CGImage, CV_LOAD_IMAGE_GRAYSCALE);
+	
+	// Scaling down
+	IplImage *small_image = cvCreateImage(cvSize(image->width/2,image->height/2), IPL_DEPTH_8U, 1);
 	cvPyrDown(image, small_image, CV_GAUSSIAN_5x5);
 	
-	// Load XML face learning data
+	// Load XML
 	NSString *path = [[NSBundle mainBundle] pathForResource:@"haarcascade_frontalface_default" ofType:@"xml"];
 	CvHaarClassifierCascade* cascade = (CvHaarClassifierCascade*)cvLoad([path cStringUsingEncoding:NSASCIIStringEncoding], NULL, NULL, NULL);
 	CvMemStorage* storage = cvCreateMemStorage(0);
 	
 	// Detect faces and draw rectangle on them
 	CvSeq* faces = cvHaarDetectObjects(small_image, cascade, storage, 1.2f, 2, CV_HAAR_DO_CANNY_PRUNING, cvSize(0,0), cvSize(20, 20));
-	
-	// release image prymid
 	cvReleaseImage(&small_image);
 	
-	NSLog(@"%d", faces->total);
-	
-//	// Create canvas to show the results
-//	CGImageRef imageRef = source.CGImage;
-//	CGColorSpaceRef colorSpace = CGColorSpaceCreateDeviceRGB();
-//	CGContextRef contextRef = CGBitmapContextCreate(NULL, imageView.image.size.width, imageView.image.size.height,
-//													8, imageView.image.size.width * 4,
-//													colorSpace, kCGImageAlphaPremultipliedLast|kCGBitmapByteOrderDefault);
-//	CGContextDrawImage(contextRef, CGRectMake(0, 0, imageView.image.size.width, imageView.image.size.height), imageRef);
-//	
-//	CGContextSetLineWidth(contextRef, 4);
-//	CGContextSetRGBStrokeColor(contextRef, 0.0, 0.0, 1.0, 0.5);
-//	
-//	// Draw results on the iamge
-//	for(int i = 0; i < faces->total; i++) {
-//		NSAutoreleasePool * pool = [[NSAutoreleasePool alloc] init];
-//		
-//		// Calc the rect of faces
-//		CvRect cvrect = *(CvRect*)cvGetSeqElem(faces, i);
-//		CGRect face_rect = CGContextConvertRectToDeviceSpace(contextRef, CGRectMake(cvrect.x * scale, cvrect.y * scale, cvrect.width * scale, cvrect.height * scale));
-//		
-//		if(overlayImage) {
-//			CGContextDrawImage(contextRef, face_rect, overlayImage.CGImage);
-//		} else {
-//			CGContextStrokeRect(contextRef, face_rect);
-//		}
-//		
-//		[pool release];
-//	}
-//	
-//	imageView.image = [UIImage imageWithCGImage:CGBitmapContextCreateImage(contextRef)];
-//	CGContextRelease(contextRef);
-//	CGColorSpaceRelease(colorSpace);
-	
+	// draw result of detection
+	for(int i = 0; i < faces->total; i++) {
+		NSAutoreleasePool * pool = [[NSAutoreleasePool alloc] init];
+		
+		// Calc the rect of faces
+		CvRect cvrect = *(CvRect*)cvGetSeqElem(faces, i);
+		
+		UIView *v = [[UIView alloc] initWithFrame:CGRectMake(cvrect.x*scale, cvrect.y*scale, cvrect.width*scale, cvrect.height*scale)];
+		[self.view addSubview:v];
+		[views addObject:v];
+		[v release];
+		[v setBackgroundColor:[UIColor colorWithRed:1 green:0 blue:0 alpha:0.5]];		
+		[pool release];
+	}
+	[imageView setImage:source];
 	cvReleaseMemStorage(&storage);
 	cvReleaseHaarClassifierCascade(&cascade);
 }
- 
-- (void)viewWillAppear:(BOOL)animated {
-	[super viewWillAppear:animated];
-	[self setTitle:[[self class] testDescription]];
-	[self test];
+
+#pragma mark - Override
+
+- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
+	self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
+	if (self) {
+		views = [[NSMutableArray array] retain];
+		imageFileNames = [[NSMutableArray array] retain];
+		
+		[imageFileNames addObject:@"Steve.jpg"];
+		[imageFileNames addObject:@"lenna.jpg"];
+	}
+	return self;
 }
 
+- (void)viewWillAppear:(BOOL)animated {
+	[super viewWillAppear:animated];
+	[self setTitle:NSLocalizedString(@"Face detection", nil)];
+	
+	[self.navigationController setToolbarHidden:NO animated:YES];
+	
+	[self changed:nil];
+}
+
+- (void)viewWillDisappear:(BOOL)animated {
+	[super viewWillDisappear:animated];
+	[self.navigationController setToolbarHidden:YES animated:YES];
+}
+
+- (void)viewDidAppear:(BOOL)animated {
+	
+	UISegmentedControl *segment = [[UISegmentedControl alloc] initWithItems:[NSArray arrayWithObjects: NSLocalizedString(@"Prev", nil), NSLocalizedString(@"Next", nil), nil]];
+	[segment setSegmentedControlStyle:UISegmentedControlStyleBar];
+	[segment setMomentary:YES];
+	[segment autorelease];
+	UIBarButtonItem *item = [[UIBarButtonItem alloc] initWithCustomView:segment];
+	[segment addTarget:self action:@selector(changed:) forControlEvents:UIControlEventValueChanged];
+	
+	[self.navigationController.toolbar setItems:[NSArray arrayWithObject:item]];
+}
+
+#pragma mark - dealloc
+
 - (void)dealloc {
+	[views release];
+	[imageFileNames release];
     [super dealloc];
 }
 
