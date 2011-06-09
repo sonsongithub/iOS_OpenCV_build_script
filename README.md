@@ -3,7 +3,7 @@ OpenCV for iOS
 
 How to build
 =======
-opencv_ios_build_script.sh builds binary for armv7/7 and iOS simulator, and integrates them into one static link library file by "lipo" command.
+opencv_ios_build_script.sh builds binary for armv6/7 and iOS simulator, and integrates them into one static link library file by "lipo" command.
 
 Check out OpenCV-2.2.0 source code into "iOS_OpenCV_build_script" folder.
 
@@ -31,9 +31,9 @@ Sorry, Japanese only....
 
 Dependency
 =======
- * [OpenCV-Help-Library]. This project depends on [OpenCV-Help-Library], mutually.
+ * [Quartz Help Library][]. Sample  project depends on [Quartz Help Library][], mutually.
 
 
 [sonson.jp]: http://sonson.jp
 [BSD License]: http://www.opensource.org/licenses/bsd-license.php
-[OpenCV-Help-Library]: https://github.com/sonsongithub/OpenCV-Help-Library
+[Quartz Help Library]: https://github.com/sonsongithub/Quartz-Help-Library
