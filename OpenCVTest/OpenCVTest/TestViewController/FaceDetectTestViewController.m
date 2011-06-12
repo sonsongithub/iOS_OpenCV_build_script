@@ -34,6 +34,7 @@
 
 #import "OpenCVHelpLibrary.h"
 
+
 @interface FaceDetectTestViewController(private)
 
 - (void)changed:(id)sender;
@@ -81,7 +82,10 @@
 	CvMemStorage* storage = cvCreateMemStorage(0);
 	
 	// Detect faces and draw rectangle on them
-	CvSeq* faces = cvHaarDetectObjects(small_image, cascade, storage, 1.2f, 2, CV_HAAR_DO_CANNY_PRUNING, cvSize(0,0), cvSize(20, 20));
+	_tic();
+	CvSeq* faces = cvHaarDetectObjects(small_image, cascade, storage, 1.3f, 2, CV_HAAR_DO_CANNY_PRUNING, cvSize(0,0), cvSize(20, 20));
+	float t = _toc();
+	printf("%f\n", t);
 	cvReleaseImage(&small_image);
 	
 	// draw result of detection

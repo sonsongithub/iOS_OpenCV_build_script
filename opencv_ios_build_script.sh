@@ -82,7 +82,7 @@ modules[6]=legacy
 modules[7]=ml
 modules[8]=objdetect
 modules[9]=video
-modules[10]=calib3d
+# modules[10]=calib3d
 
 for module in ${modules[@]};do
 	file="libopencv_${module}.a"
